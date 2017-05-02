@@ -12,6 +12,12 @@ As Octopus checks the feed and package at release creation time, even if it is n
 To fix this, would you be able to do the following:
 Create a new variable with the name as your feed variable and have it with out a value or scope. You should end up with 2 variables with the same name, one empty and the other with NuGet feed value.
 
-Below are some screenshots that illustrate an example of this:
+Below are some screenshots that illustrate an example of this. In my example, I have a package feed that points to three different folders depending on their environment. I can call a single #{Feed.Variable} in my package step and have Octopus select the value based on the environment I am deploying to. 
 
+![Defining the feed value as a variable on the package step](process.JPG)
 
+In my second screenshot, you can see the dummy variable I have created which is unscoped. This allows Octopus to use the #{Feed.Name} Variable at the time the release is created and apply the correct value when you deploy.
+
+![Defining an unscoped dummy variable in the project variables with out a scope](variables.JPG)
+
+Once the dummy varialbe is set, the variable feed should work as expected.
