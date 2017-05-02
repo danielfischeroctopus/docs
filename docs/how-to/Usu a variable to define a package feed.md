@@ -9,7 +9,7 @@ When defining a package feed in Octopus, you have the option to use a variable b
 
 As Octopus checks the feed and package at release creation time, even if it is not used later on, we require an unscoped variable with the feed value to be present for us to evaluate.
 
-To fix this, you will need to do the following:
+To fix this, you will need to do the following:</p>
 Create a new variable with the name as your feed variable and have it with out a value or scope. You should end up with at least 2 variables with the same name, one empty and the other with NuGet feed value and any scoping.
 
 Below are some screenshots that illustrate an example of this. In my example, I have a package feed that points to three different folders depending on their environment. I can call a single #{Feed.Variable} in my package step and have Octopus select the value based on the environment I am deploying to. 
