@@ -19,7 +19,7 @@ Below are some screenshots that illustrate an example of this. In my example, I 
 
 ![Defining the feed value as a variable on the package step](process.JPG)
 
-In my second screenshot, you can see the placeholder variable I have created which is unscoped. This allows Octopus to use the #{Feed.Name} Variable at the time the release is created and apply the correct value when you deploy.
+In my second screenshot, you can see the placeholder variable I have created which is unscoped. This allows Octopus to use the #{Feed.Variable} Variable at the time the release is created and apply the correct value when you deploy.
 
 ![Defining a unscoped placeholder variable in the project variables with out a scope](variable.JPG)
 
