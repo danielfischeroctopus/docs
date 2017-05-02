@@ -18,6 +18,6 @@ Below are some screenshots that illustrate an example of this. In my example, I 
 
 In my second screenshot, you can see the dummy variable I have created which is unscoped. This allows Octopus to use the #{Feed.Name} Variable at the time the release is created and apply the correct value when you deploy.
 
-![Defining an unscoped dummy variable in the project variables with out a scope](variables.JPG)
+![Defining an unscoped dummy variable in the project variables with out a scope](variable.JPG)
 
 Once the dummy varialbe is set, the variable feed should work as expected.
