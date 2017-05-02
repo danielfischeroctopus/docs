@@ -11,7 +11,7 @@ In Octopus, you are able to define a package feed with a variable, this is usefu
 As Octopus checks the feed and package at release creation time there is only a small amount of variable evaluation done. Unfortunately, we do not have any environmental context at this stage of the deployment. So even if it is not used later on, Octopus require an unscoped variable with the feed value to be present for the variable evaluation.
 :::
 
-To fix this, you will need to do the following:</p>
+Below are instructions on how you can achieve this in Octopus:</p>
 Create a new variable with the name as your feed variable and have it with out a value or scope. You should end up with at least 2 variables with the same name, one empty and the other with NuGet feed value and any scoping.
 
 
